@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`proper rendering matches snapshot at endgame 1`] = `
+<div>
+  <div
+    class="Snowman"
+  >
+    <img
+      alt="6"
+      src="6.png"
+    />
+    <p>
+      Number Wrong: 
+      6
+    </p>
+    <p
+      class="Snowman-word"
+    >
+      _
+      _
+      _
+      _
+      _
+    </p>
+    <p>
+      You Lose! The correct answer was 
+      <strong>
+        apple
+      </strong>
+    </p>
+  </div>
+</div>
+`;

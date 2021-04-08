@@ -55,6 +55,7 @@ function Snowman(props) {
     setNWrong(n => n + (answer.includes(ltr) ? 0 : 1));
   }
 
+
   /** generateButtons: return array of letter buttons to render */
   function generateButtons() {
     return "abcdefghijklmnopqrstuvwxyz".split("").map(ltr => (
@@ -75,7 +76,10 @@ function Snowman(props) {
         <img src={(props.images)[nWrong]} alt={nWrong} />
         <p>Number Wrong: {nWrong}</p> 
         <p className="Snowman-word">{guessedWord()}</p>
-        <p>{generateButtons()}</p>
+        {nWrong < props.maxWrong  
+         ? <p>{generateButtons()}</p>
+         : <p>You Lose! The correct answer was <strong>{answer}</strong></p>
+        }
       </div>
   );
 }
